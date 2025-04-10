@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.home-layout {
+  background: #f1f1f1;
+  /* height: 100vh; */
+  display: flex;
+}
+.left-side {
+  width: 30%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.right-side {
+  width: 70%;
+  background: #fff;
+  padding: 15px;
+}
+.logo img {
+  width: 69px;
+}
+
+.left-side-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.left-side-footer textarea {
+  border: none;
+  width: 100%;
+  background: #dddcdc;
+  padding: 13px 18px 13px 37px;
+  font-size: 15px;
+  border-radius: 30px;
+  resize: none;
+  overflow: hidden;
+  height: 50px;
+}
+.left-side-footer button {
+  position: absolute;
+  right: 6px;
+  border: none;
+  padding: 0;
+  top: 5px;
+  background: transparent;
+}
+.left-side-footer button img {
+  width: 36px;
+}
+img.attached-img {
+  width: 15px;
+  position: absolute;
+  left: 14px;
+  top: 11px;
+}
+.logo {
+  margin-bottom: 20px;
+}
+.left-side-body p {
+  margin: 0;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+}
+.code-button {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.outline-bttn {
+  border: 1px solid #356bf5;
+  display: block;
+  color: #356bf5;
+  padding: 5px 19px;
+  border-radius: 5px;
+  background: #fff;
+}
+button.solid-bttn {
+  background: #356bf5;
+  border: none;
+  color: #fff;
+  display: block;
+  padding: 6px 19px;
+  border-radius: 5px;
+}
+.left-side-body ul li ul {
+  padding-left: 20px;
+}
+button.toogleBttn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  background: transparent;
+}
+.toggleView {
+  position: fixed;
+  right: 34px;
+  bottom: 68px;
+  background: #f1f1f1;
+  border-radius: 30px;
+  border: 2px solid #2222;
+  z-index: 9;
+}
+.toggleView ul li label {
+  margin: 0;
+  position: absolute;
+  right: 52px;
+  background: #3e7af3;
+  width: 124px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 5px;
+  border-radius: 11px;
+  top: 6px;
+  display: none;
+}
+.toggleView ul li {
+  position: relative;
+  padding: 12px 10px;
+}
+.toggleView ul li:hover label{
+  display: block;
+}
+.auth-form {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.auth-form label {
+  font-size: 15px;
+  color: #222;
+  margin: 0 0 5px 0;
+}
+.ThemeBttn {
+  width: 100%;
+  border: none;
+  background: #51c2d7;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 9px 15px;
+}
+.form-group {
+  position: relative;
+}
+.auth-form .form-control {
+  border: 1px solid #ccc;
+  font-size: 13px;
+  padding: 12px 15px;
+  height: auto;
+}
+a.editText {
+  position: absolute;
+  top: 38px;
+  right: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #51c2d7;
+}
+.auth-form h3 {
+  font-size: 20px;
+}
+h5.small-text {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 400;
+}
+.noBttnText {
+  border: none;
+  background: transparent;
+  padding: 0;
+  font-size: 15px;
+}
+.subscription-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.subscription-box h3 {
+  font-size: 19px;
+  margin: 19px 0 11px 0;
+}
+.subscription-box p {
+  font-size: 14px;
+  color: #222;
+  line-height: 1.6;
+}
+.subscription-box b {
+  display: block;
+  margin: 0 0 11px 0;
+}
+.subscription-box li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 7px 0;
+  font-size: 13px;
+}
+.subscription-box li:last-child{
+  border: none;
+}
+.subscription-box ul{
+  margin: 15px 0 0 0;
+}
+.logo.profile-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name-img {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.name-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name-img1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.name-img1 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.form-control {
+  height: auto;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.userList {
+  display: flex;
+  width: 100%;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+  gap: 15px;
+}
+.member-sidebar {
+  border-right: 1px solid #ccc;
+  height: 100%;
+}
+.userList-pic {
+  width: 100px;
+  height: 100px;
+}
+.userList-pic img {
+  width: 100%;
+  height: 100%;
+}
+.userList-info h3 {
+  font-size: 17px;
+  color: #222;
+}
+.userList-info h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+.userList-info h6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+}
+.member-right {
+  padding: 15px 15px 15px 0;
+}
+.member-right-top {
+  display: flex;
+  gap: 20px;
+}
+.member-right-top-img img {
+  width: 150px;
+  height: 150px;
+}
+.member-right-top-info h5 {
+  font-size: 14px;
+}
+.member-right-top-info h6 {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 3px 0;
+}
+.member-right ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+.top-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  z-index: 9;
+}
+.dash-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dash-logo img {
+  width: 99px;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14%;
+  background: #fff;
+  height: 100%;
+  padding: 86px 15px 15px 15px;
+  border-right: 1px solid #ccc;
+}
+.sidebar li a {
+  color: #222;
+  font-size: 15px;
+  display: block;
+  padding: 8px 15px;
+}
+.sidebar li a.active {
+  color: #007bff;
+  font-weight: 700;
+}
+.right-comon {
+  padding: 101px 20px 63px 14%;
+}
+h3.page-title {
+  font-size: 20px;
+}
+.right-comon button.ThemeBttn {
+  width: auto;
+}
+.payment-page {
+  width: 500px;
+  margin: 38px auto;
+  max-width: 100%;
+  background: #fff;
+  box-shadow: 0 0 14px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  padding: 20px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f2f2f2;
+  padding: 8px 20px;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+}
+.footer ul li a {
+  display: block;
+  color: #222;
+  font-size: 13px;
+  font-weight: 700;
+}
+.faq-sec .accordion-item {
+  background-color: #fff;
+  border: 0;
+  border-bottom: none;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.faq-sec .accordion-item h2.accordion-header {
+  margin: 0;
+}
+.faq-sec .accordion-button {
+  background-color: #fff;
+  border: 0;
+  color: #0e0e0e;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 10px 15px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+.faq-sec .accordion-button:before {
+  content: "\f068";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 11px;
+  top: 12px;
+}
+.faq-sec .accordion-body {
+  color: #333;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0 15px;
+}
+.faq-sec .accordion-button.collapsed:before {
+  content: "\f067";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 11px;
+  top: 12px;
+}
+.subscription-box span.current-subs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  display: inline-block;
+  padding: 2px 10px;
+  background: #4a6ea9;
+  border-radius: 0 5px 0 0;
+}
+.custom-table th {
+  font-size: 14px;
+  background: #99d0ed;
+  color: #000000;
+  border: 1px solid #51c3ff !important;
+}
+.custom-table td {
+  border: 1px solid #99d0ed;
+  font-size: 14px;
+}
+ul.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 20px 0;
+}
+.card-list button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background: transparent;
+  position: relative;
+  text-align: center;
+  width: 199px;
+}
+.card-list button img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.card-list button label {
+  display: block;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0 5px 0;
+}
+.card-list button .fa-square-check {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  color: green;
+  font-size: 28px;
+}
+.right-menu ul li a {
+  background: #50b7dd;
+  color: #000;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 0;
+  font-size: 14px;
+  text-decoration: none;
+}
+.right-menu ul li select {
+  background: #50b7dd;
+  color: #000;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 0;
+  font-size: 14px;
+  text-decoration: none;
+  border: none;
+}
+.right-comon.leason-view {
+  padding: 84px 20px 63px 14%;
+}
+.right-menu {
+  margin-bottom: 20px;
+}
+.left-back a {
+  background: #50b7dd;
+  display: block;
+  color: #000;
+  font-size: 14px;
+  padding: 10px 10px;
+}
+.left-back {
+  margin-bottom: 15px;
+}
