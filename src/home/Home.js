@@ -4,6 +4,7 @@ import Editor from "@monaco-editor/react";
 import Dropdown from 'react-bootstrap/Dropdown';
 import TopBar from '../common/TopBar';
 import Sidebar from '../common/Sidebar';
+import { NavLink } from 'react-router-dom';
 const Home = () => {
 
   const [isToggle, setisToggle] = useState(false)
@@ -25,10 +26,12 @@ const Home = () => {
         <div className='container-fluid'>
             <Sidebar/>
             <div className='right-comon'>
-                <h3 className='page-title'>Chat</h3>
+             
                 <div className='home-layout'>
         <div className='left-side'>
-            
+             <div className='left-back'>
+                                       <NavLink to="/leason-plan"><i className="fa-solid fa-angle-left"></i> Lesson Plan</NavLink>
+                                    </div>
             <div className='left-side-body'>
               <p>Translates your code into JavaScript, TypeScript, Python, Java, C++, or PHP.</p>
             </div>
@@ -43,7 +46,7 @@ const Home = () => {
         </div>
         <div className='right-side'>
           <Editor
-        height="75vh"
+        height="60vh"
         defaultLanguage="javascript"
         defaultValue="// some comment"
         onMount={handleEditorDidMount}

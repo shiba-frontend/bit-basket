@@ -148,8 +148,8 @@ const ParticipantList = () => {
                 </ul>
 
                 <div className='text-right'>
-                    <NavLink to="/leason-plan" className='btn btn-primary mr-2'>View Lesson Plan</NavLink>
-                    <NavLink className='btn btn-warning'>Chat</NavLink>
+                    <NavLink to="/leason" className='btn btn-primary mr-2'>View Lesson Plan</NavLink>
+                    <NavLink to="/chat" className='btn btn-warning'>Chat</NavLink>
                
                 </div>
 

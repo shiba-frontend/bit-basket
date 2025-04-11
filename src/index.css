@@ -101,10 +101,11 @@ button.solid-bttn {
 }
 button.toogleBttn {
   position: fixed;
-  bottom: 30px;
+  bottom: 39px;
   right: 30px;
   border: none;
   background: transparent;
+  z-index: 9;
 }
 .toggleView {
   position: fixed;
@@ -521,4 +522,8 @@ ul.card-list {
 }
 .left-back {
   margin-bottom: 15px;
+}
+.right-menu ul {
+  display: flex;
+  gap: 10px;
 }

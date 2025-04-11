@@ -14,11 +14,17 @@ const Sidebar = () => {
             <li>
                 <NavLink to="/my-subscription">My Subscription</NavLink>
             </li>
-            <li>
+            {/* <li>
                 <NavLink to="/chat">Chat</NavLink>
-            </li>
+            </li> */}
             <li>
                 <NavLink to="/leason-plan">Leason</NavLink>
+            </li>
+            <li>
+                <NavLink to="/sme-list">SME</NavLink>
+            </li>
+            <li>
+                <NavLink to="/subject">Subject</NavLink>
             </li>
         </ul>
 

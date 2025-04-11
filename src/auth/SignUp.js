@@ -138,7 +138,7 @@ const handleToggle = () => {
          <div className='row mt-3'>
          <div className='col-lg-12'>
          <div className='form-group'>
-             {/* <label>Select Status<span style={{color:'red'}}>*</span></label> */}
+          
              <div className='d-flex'>
                  <div className="form-check">
                      <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" 

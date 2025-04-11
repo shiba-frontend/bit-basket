@@ -27,6 +27,10 @@ import CreateLeasone from "./leason/CreateLeasone";
 import ParticipantList from "./leason/ParticipantList";
 import LeasonOverview from "./leason/LeasonOverview";
 import EditLeason from "./leason/EditLeason";
+import SmeList from "./sme/SmeList";
+import AddSme from "./sme/AddSme";
+import SubjectList from "./sme/SubjectList";
+import AddSubject from "./sme/AddSubject";
 
 
 function App() {
@@ -63,6 +67,10 @@ function App() {
         <Route path="/create-leason" element={<CreateLeasone />} />
         <Route path="/participant-list" element={<ParticipantList />} />
         <Route path="/edit-leason" element={<EditLeason />} />
+        <Route path="/sme-list" element={<SmeList />} />
+        <Route path="/add-sme" element={<AddSme />} />
+        <Route path="/subject" element={<SubjectList />} />
+        <Route path="/add-subject" element={<AddSubject />} />
         
       {/* </Route> */}
 

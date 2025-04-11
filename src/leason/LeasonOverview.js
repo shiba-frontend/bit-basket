@@ -3,6 +3,7 @@ import { IMAGE } from '../utils/theme'
 import TopBar from '../common/TopBar';
 import Sidebar from '../common/Sidebar';
 import { NavLink } from 'react-router-dom';
+import Editor from "@monaco-editor/react";
 
 const LeasonOverview = () => {
 
@@ -76,11 +77,16 @@ const LeasonOverview = () => {
                       </div>
                       <div className='partition-leason'>
                         <h4>Sample Code</h4>
-                        <p>
-              ECHO "Hello World!
-              echo "Hello World!
-              EcHo "Hello World!
-              </p>
+                        <Editor
+                      height="20vh"
+                      defaultLanguage="javascript"
+                      defaultValue='<?php
+              ECHO "Hello World!<br>";
+              echo "Hello World!<br>";
+              EcHo "Hello World!<br>";
+              ?> '
+                      onMount={handleEditorDidMount}
+                    />
                       </div>
                       <div className='partition-leason'>
                         <h4>Explanation
